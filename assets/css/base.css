@@ -1,0 +1,392 @@
+:root {
+    --white-color: #fff;
+    --color-text-in-white-bg: #9a9a9a;
+    --text-color-input: #a3a3a3;
+    --item-color: #555555;
+    --text-color-border: #f1f1f1;
+    --red-background: #f76570;
+    --green-background: #1bbc9b;
+    --purple-background: #ba71da;
+    --yellow-background: #ffd205;
+    --blue-sky-background: #14B9D5;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    letter-spacing: 1px;
+    cursor: default;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.app__container {
+    overflow: hidden;
+}
+
+
+/* phan wrap bao các phan trong content */
+.our-destination-wrap, .our-packages__wrap {
+    padding-top: 63px;
+}
+
+.next-holiday-wrap {
+    padding-top: calc(77px - 30px);
+}
+.best-beaches-wrap {
+    padding-top: 77px;
+}
+
+.discover-wrap {
+    padding-top: 77px;
+}
+
+.footer__wrap {
+    margin-top: 77px;
+    height: 100%;
+}
+
+.footer__information-wrap {
+    margin-top: 63px;
+}
+/* end phần wrap bao các phần trong content */
+
+
+/* btn */
+.btn {
+    text-decoration: none;
+    color: var(--white-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+}
+
+.navbar-category-btn-link {
+    display: block;
+    background-color: var(--purple-background);
+    padding: 12px 15px 10px;
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.best-beaches__btn-link {
+    display: block;
+    background-color: var(--green-background);
+    padding: 15px 35px;
+    border-radius: 38px;
+    letter-spacing: 2px;
+    line-height: 1.4rem;
+    font-size: 1.4rem;
+    width: 170px;
+    text-align: center;
+    transition: background-color ease-out 0.125s;
+}   
+
+.discover__btn {
+    display: block;
+    background-color: var(--white-color);
+    padding: 15px 35px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 38px;
+    letter-spacing: 2px;
+    line-height: 1.4rem;
+    font-size: 1.4rem;
+    width: 140px;
+}
+
+.discover__btn--orange {
+    color: #f3a46b;
+    transition: opacity ease-out 0.125s;
+}
+
+.discover__btn--green {
+    color: var(--green-background);
+    transition: opacity ease-out 0.125s;
+}
+
+.our-packages__item-btn {
+    display: inline-block;
+    padding: 5px 20px;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.item__btn--yellow {
+    background-color: var(--yellow-background);
+    transition: background-color ease-out 0.125s;
+}
+
+.item__btn--red {
+    background-color: var(--red-background);
+    transition: background-color ease-out 0.125s;
+}
+
+.item__btn--purple {
+    background-color: var(--purple-background);
+    transition: background-color ease-out 0.125s;
+}
+
+.collapse-menu__btn--yellow {
+    background: var(--yellow-background);
+    background: -moz-linear-gradient(left, var(--yellow-background) 0%, #ff9b05 100%);
+    background: linear-gradient(to right, var(--yellow-background) 0%, #ff9b05 100%);
+    background: -webkit-linear-gradient(left, var(--yellow-background) 0%, #ff9b05 100%);
+}
+
+.collapse-menu__btn--red {
+    background: var(--red-background);
+    background: -moz-linear-gradient(left, var(--red-background) 0%, #f78d65 100%);
+    background: -webkit-linear-gradient(left, var(--red-background) 0%, #f78d65 100%);
+    background: linear-gradient(to right, var(--red-background) 0%, #f78d65 100%);
+}
+
+.collapse-menu__btn--purple {
+    background: var(--purple-background);
+    background: -moz-linear-gradient(left, var(--purple-background) 0%, #da717b 100%);
+    background: -webkit-linear-gradient(left, var(--purple-background) 0%, #da717b 100%);
+    background: linear-gradient(to right, var(--purple-background) 0%, #da717b 100%);
+}
+
+.collapse-menu__btn--green {
+    background: #1bbc9b;
+    background: -moz-linear-gradient(left, #1bbc9b 0%, #1bbc63 100%);
+    background: -webkit-linear-gradient(left, #1bbc9b 0%, #1bbc63 100%);
+    background: linear-gradient(to right, #1bbc9b 0%, #1bbc63 100%);
+}
+
+.collapse-menu__btn--light-orange {
+    background: #f3a46b;
+    background: -moz-linear-gradient(left, #f3a46b 0%, #f3c96b 100%);
+    background: -webkit-linear-gradient(left, #f3a46b 0%, #f3c96b 100%);
+    background: linear-gradient(to right, #f3a46b 0%, #f3c96b 100%);
+}
+
+.collapse-menu__btn--light-blue {
+    background: #14b9d5;
+    background: -moz-linear-gradient(left, #14b9d5 0%, #14d5b1 100%);
+    background: -webkit-linear-gradient(left, #14b9d5 0%, #14d5b1 100%);
+    background: linear-gradient(to right, #14b9d5 0%, #14d5b1 100%);
+}
+/* end btn */
+
+
+/* underlined */
+.underlined::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    z-index: -1;
+    right: 0;
+    transform: skewX(-20deg);
+}
+
+.header__destination-heading .underlined,
+.our-destination__heading-bot--green .underlined,
+.next-holiday__heading-bot .underlined,
+.best-beaches__info-heading-bot .underlined,
+.our-packages__heading-bot--green .underlined,
+.collapse-menu__heading-bot--yellow .underlined,
+.collapse-menu__heading-bot--orange .underlined {
+    position: relative;
+}
+
+.header__destination-heading .underlined::after {
+    background-color: var(--purple-background);
+    top: 70%;
+}
+
+.our-destination__heading-bot--green .underlined::after, 
+.our-packages__heading-bot--green .underlined::after {
+    background-color: var(--green-background);
+    top: 66%;
+} 
+
+.next-holiday__heading-bot .underlined::after {
+    background-color: var(--red-background);
+    top: 69%;
+}
+
+.best-beaches__info-heading-bot .underlined::after {
+    background-color: var(--blue-sky-background);
+    top: 65%;
+}
+
+.collapse-menu__heading-bot--yellow .underlined::after {
+    background-color: var(--yellow-background);
+    top: 61%;
+}
+
+.collapse-menu__heading-bot--orange .underlined::after{
+    background-color: #f3a46b;
+    top: 62%;
+}
+/* end underlined */
+
+
+
+/* bonus of our packages */
+.our-packages__item-type-span {
+    border-radius: 30px;
+    line-height: 14px;
+    font-size: 10px;
+    margin-left: 5px;
+    padding: 0.7px 10px;
+    color: var(--white-color);
+    letter-spacing: 1px;
+}
+
+.item-type__span--yellow {
+    background-color: var(--yellow-background);
+}
+
+.item-type__span--red {
+    background-color: var(--red-background);
+}
+
+.item-type__span--purple {
+    background-color: var(--purple-background);
+}
+
+
+/* our packages background icon */
+.our-packages__item-bg-icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    bottom: -22px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+}
+
+.our-packages__item-bg-icon--yellow {
+    background: var(--yellow-background);
+    background: -moz-linear-gradient(left, var(--yellow-background) 0%, #ff9b05 100%);
+    background: linear-gradient(to right, var(--yellow-background) 0%, #ff9b05 100%);
+    background: -webkit-linear-gradient(left, var(--yellow-background) 0%, #ff9b05 100%);
+}
+
+.our-packages__item-bg-icon--red {
+    background: var(--red-background);
+    background: -moz-linear-gradient(left, var(--red-background) 0%, #f78d65 100%);
+    background: -webkit-linear-gradient(left, var(--red-background) 0%, #f78d65 100%);
+    background: linear-gradient(to right, var(--red-background) 0%, #f78d65 100%);
+}
+
+.our-packages__item-bg-icon--purple {
+    background: var(--purple-background);
+    background: -moz-linear-gradient(left, var(--purple-background) 0%, #da717b 100%);
+    background: -webkit-linear-gradient(left, var(--purple-background) 0%, #da717b 100%);
+    background: linear-gradient(to right, var(--purple-background) 0%, #da717b 100%);
+}
+
+
+
+
+/* hover btn & link */
+.information__contact-socials-link:hover,
+.category-contact__item-link:hover,
+.view-more__link:hover {
+    opacity: 0.8; 
+}
+
+.destination-choose-wrap:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.item__btn--red:hover {
+    background-color: #f74654;
+}
+
+.item__btn--purple:hover,
+.navbar-category-btn-link:hover {
+    background-color: #be44f5;
+}
+
+.item__btn--yellow:hover {
+    background-color: #f7c024;
+}
+
+.send-email__form-btn:hover {
+    background-color: #34acd8;
+}
+
+.header__back-to-top-btn:hover {
+    background-color: #000;
+}
+
+.best-beaches__btn-link:hover {
+    background-color: #19b393;
+}
+
+
+/* Phan Heading dung chung */
+.heading-top-common {
+    color: var(--color-text-in-white-bg);
+    font-weight: normal;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+.heading-bot-common {
+    letter-spacing: 0px;
+    font-weight: bold;
+    color: var(--item-color);
+}
+
+.heading-country {
+    text-decoration: none;
+    color: var(--item-color);
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    letter-spacing: 0;
+    -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+}
+
+.heading-region {
+    text-decoration: none;
+    color: var(--color-text-in-white-bg);
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
